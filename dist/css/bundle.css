@@ -44,7 +44,8 @@ input[type="button"].button-primary:focus {
   border-color: #263238; }
 
 .button-primary {
-  margin: 5px 5px 0 0; }
+  margin: 5px 5px 0 0;
+  border-radius: 2px; }
 
 code {
   color: #546E7A; }
