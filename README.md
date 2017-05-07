@@ -1,17 +1,21 @@
 # react-boilerplate
-A slightly opinionated yet dead simple boilerplate for ReactJS
+
+[![Build Status](https://travis-ci.org/mikechabot/react-boilerplate.svg?branch=master)](https://travis-ci.org/mikechabot/react-boilerplate)
+[![Dependency Status](https://david-dm.org/mikechabot/react-boilerplate.svg)](https://david-dm.org/mikechabot/react-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/mikechabot/react-boilerplate/badge.svg?branch=master&cacheBuster=1)](https://coveralls.io/github/mikechabot/react-boilerplate?branch=master)
+
+A slightly opinionated yet dead simple boilerplate for ReactJS and Webpack 2.
 
 #### http://mikechabot.github.io/react-boilerplate/
 
 ## Features
 
 #### Build Process
- * Built with [webpack](https://webpack.github.io/)
+ * Built with [webpack 2](https://webpack.js.org/configuration/)
  * Supports ES6 via [Babel](https://babeljs.io/) transpiling
 
 #### State Management
-* [redux](http://redux.js.org/index.html) for state tree management
-* [react-redux](https://github.com/reactjs/react-redux) for stateful component bindings
+* [redux-entity](https://github.com/mikechabot/redux-entity) for domain entity management
 * [redux-thunk](https://github.com/gaearon/redux-thunk) for [asynchronous actions](https://github.com/mikechabot/react-boilerplate/blob/master/src/redux/actions/thunk-action-creators.js#L21)
 * [redux-logger](https://github.com/theaqua/redux-logger) for capturing actions
 
@@ -28,15 +32,13 @@ A slightly opinionated yet dead simple boilerplate for ReactJS
 
 #### Develop & Deploy
 * Environmental configurations for both webpack and redux
-  * **Dev** // [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) with [React Hot Loader](http://gaearon.github.io/react-hot-loader/) for live refresh. `redux-logger` enabled.
-  * **Prod** // [Express](http://expressjs.com/) server with `redux-logger` disabled.
-* See [here](https://github.com/mikechabot/react-boilerplate/blob/master/webpack.config.js#L69) and [here](https://github.com/mikechabot/react-boilerplate/blob/master/src/redux/store/configure-store.js#L9)
+  * **Dev**: [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) with [React Hot Loader](http://gaearon.github.io/react-hot-loader/). `redux-logger` enabled.
+  * **Prod**: [Express](http://expressjs.com/) server with `redux-logger` disabled.
 
 #### Testing
-* Tested with [Mocha](https://mochajs.org/)
+* Tested with [Mocha](https://mochajs.org/) and [Chai](http://chaijs.com/)
 * Coverage support via [Istanbul](https://gotwarlost.github.io/istanbul/)
 * [react-addons-test-utils](https://facebook.github.io/react/docs/test-utils.html) for component testing
-* [redux-mock-store](https://github.com/arnaudbenard/redux-mock-store) for Redux state testing
 * [Sinon.JS](http://sinonjs.org/) for mocking, stubbing & spying
 
 ## Get Started
@@ -45,9 +47,7 @@ A slightly opinionated yet dead simple boilerplate for ReactJS
 3. Launch environment:
   *  **Production**: `npm start`
   *  **Development**: `npm run dev`
-
-#### Test Commands
-* `npm test`: Shortcut for test coverage command
-* `npm run test:unit`: Run unit tests located in `test/unit/**/*.js`
-* `npm run test:integration`: Run integration tests location in `test/integration/**/*.js`
-* `npm run test:coverage`: Run coverage for unit and integration tests
+4. Build for production:
+  * `npm run build:prod`
+5. Test:
+  * `npm test`

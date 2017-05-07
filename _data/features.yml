@@ -25,7 +25,7 @@
 - items:
     - title: <i class="fa fa-wrench" aria-hidden="true"></i> Build Process
       items:
-          - label: Built with <a href="https://webpack.github.io/">webpack</a>
+          - label: Built with <a href="https://webpack.js.org/">webpack 2</a>
           - label: Supports ES6 via <a href="https://babeljs.io/">Babel</a> transpiling
 
     - title: <i class="fa fa-code" aria-hidden="true"></i> HTTP
@@ -42,5 +42,5 @@
       items:
           - label: "Environmental configurations for both webpack and redux:"
             subitems:
-                - <strong>DEV:</strong> <a href="https://webpack.github.io/docs/webpack-dev-server.html">webpack-dev-server</a> with <a href="http://gaearon.github.io/react-hot-loader/">React Hot Loader</a>. redux-logger <strong>enabled.</strong>
+                - <strong>DEV:</strong> <a href="https://webpack.js.org/configuration/dev-server/">webpack-dev-server</a> with <a href="http://gaearon.github.io/react-hot-loader/">React Hot Loader</a>. redux-logger <strong>enabled.</strong>
                 - <strong>PROD:</strong> <a href="http://expressjs.com/">Express</a> server with redux-logger <strong>disabled</strong>
