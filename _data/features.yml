@@ -12,7 +12,7 @@
 
     - title: <i class="fa fa-link" aria-hidden="true"></i> Routing
       items:
-          - label: <a href="https://github.com/reactjs/react-router">react-router</a> for client-side <a href="https://github.com/mikechabot/react-boilerplate/blob/master/src/routes.js">routing</a>
+          - label: <a href="https://github.com/reactjs/react-router">react-router v3</a> for client-side <a href="https://github.com/mikechabot/react-boilerplate/blob/master/src/routes.js">routing</a>
 
     - title: <i class="fa fa-diamond" aria-hidden="true"></i> Testing
       items:
