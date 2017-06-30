@@ -6,8 +6,8 @@
     "start": "npm run prod",
     "dev": "npm run build:dev && npm run start-dev-server",
     "prod": "npm run build:prod && npm run start-server",
-    "build:dev": "cross-env NODE_ENV=development webpack --progress --colors",
-    "build:prod": "cross-env NODE_ENV=production webpack --progress --colors",
+    "build:dev": "cross-env NODE_ENV=development webpack --colors",
+    "build:prod": "cross-env NODE_ENV=production webpack --colors",
     "linter": "eslint src -f html --ext .jsx --ext .js -o lint-report.html",
     "test": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "start-dev-server": "cross-env NODE_ENV=development node server.js",
@@ -75,5 +75,8 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "devDependencies": {
+    "webpack-simple-progress-plugin": "0.0.2"
   }
 }

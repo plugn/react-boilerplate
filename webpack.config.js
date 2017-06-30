@@ -8,6 +8,7 @@ const autoprefixer = require('autoprefixer');
 const CleanPlugin = require('./utils/clean-plugin');
 const NodeUtils = require('./src/services/common/node-service');
 const appConfig = require('./config/config');
+const ProgressBarPlugin = require('webpack-simple-progress-plugin');
 
 const config = {
     output: {
@@ -18,6 +19,7 @@ const config = {
         extensions: ['.js', '.jsx', '.json']
     },
     plugins: [
+        new ProgressBarPlugin(),
         new CleanPlugin({
             files: ['dist/*']
         }),
